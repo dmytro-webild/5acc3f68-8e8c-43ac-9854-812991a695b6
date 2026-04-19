@@ -11,7 +11,7 @@ import TestimonialCardTen from "@/components/sections/testimonial/TestimonialCar
 import FeatureCardSixteen from "@/components/sections/feature/FeatureCardSixteen";
 import ContactText from "@/components/sections/contact/ContactText";
 import FooterLogoReveal from "@/components/sections/footer/FooterLogoReveal";
-import { Utensils, MapPin, Clock, Star } from "lucide-react";
+import { Utensils } from "lucide-react";
 
 export default function VillaBurgerPage() {
     return (
@@ -70,6 +70,7 @@ export default function VillaBurgerPage() {
                         gridVariant="three-columns-all-equal-width"
                         animationType="slide-up"
                         textboxLayout="default"
+                        useInvertedBackground={false}
                         products={[
                             { id: "1", name: "Villa Clássico", price: "R$ 25", imageSrc: "http://img.b2bpic.net/free-photo/meat-burger-wooden-board-lettuce-tomato-cheese-french-fries-ketchup-side-view_141793-3157.jpg" },
                             { id: "2", name: "Burger da Casa", price: "R$ 32", imageSrc: "http://img.b2bpic.net/front-view-burger-with-fried-egg-cutting-board_23-2148784523.jpg" },
@@ -95,6 +96,7 @@ export default function VillaBurgerPage() {
                 <div id="testimonials" data-section="testimonials">
                     <TestimonialCardTen
                         title="O que dizem nossos clientes"
+                        description="Veja o que nossos clientes estão falando sobre nossa qualidade."
                         textboxLayout="default"
                         useInvertedBackground={true}
                         testimonials={[
@@ -110,7 +112,9 @@ export default function VillaBurgerPage() {
                 <div id="comparison" data-section="comparison">
                     <FeatureCardSixteen
                         title="Diferenciais Villa Burger"
+                        description="Por que escolher o Villa Burger em vez de redes industriais?"
                         textboxLayout="default"
+                        useInvertedBackground={false}
                         animationType="blur-reveal"
                         negativeCard={{ items: ["Fast food industrial", "Ambiente impessoal", "Sabor padronizado", "Sem cuidado artesanal"] }}
                         positiveCard={{ items: ["Hamburgueria artesanal", "Ambiente aconchegante", "Sabor único e autêntico", "Feito com paixão"] }}
