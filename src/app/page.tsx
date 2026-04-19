@@ -11,7 +11,7 @@ import TestimonialCardTen from "@/components/sections/testimonial/TestimonialCar
 import FeatureCardSixteen from "@/components/sections/feature/FeatureCardSixteen";
 import ContactText from "@/components/sections/contact/ContactText";
 import FooterLogoReveal from "@/components/sections/footer/FooterLogoReveal";
-import { Utensils } from "lucide-react";
+import { Utensils, MapPin, Clock, Star } from "lucide-react";
 
 export default function VillaBurgerPage() {
     return (
@@ -70,11 +70,10 @@ export default function VillaBurgerPage() {
                         gridVariant="three-columns-all-equal-width"
                         animationType="slide-up"
                         textboxLayout="default"
-                        useInvertedBackground={false}
                         products={[
                             { id: "1", name: "Villa Clássico", price: "R$ 25", imageSrc: "http://img.b2bpic.net/free-photo/meat-burger-wooden-board-lettuce-tomato-cheese-french-fries-ketchup-side-view_141793-3157.jpg" },
-                            { id: "2", name: "Burger da Casa", price: "R$ 32", imageSrc: "http://img.b2bpic.net/free-photo/front-view-burger-with-fried-egg-cutting-board_23-2148784523.jpg" },
-                            { id: "3", name: "Combo Artesanal", price: "R$ 38", imageSrc: "http://img.b2bpic.net/free-photo/classic-home-made-cheesburgers-black-plate-background-fries-fast-food-unhealthy-snack_482257-28911.jpg" }
+                            { id: "2", name: "Burger da Casa", price: "R$ 32", imageSrc: "http://img.b2bpic.net/front-view-burger-with-fried-egg-cutting-board_23-2148784523.jpg" },
+                            { id: "3", name: "Combo Artesanal", price: "R$ 38", imageSrc: "http://img.b2bpic.net/classic-home-made-cheesburgers-black-plate-background-fries-fast-food-unhealthy-snack_482257-28911.jpg" }
                         ]}
                     />
                 </div>
@@ -86,7 +85,7 @@ export default function VillaBurgerPage() {
                         metrics={[
                             { id: "1", value: "5.0", description: "Avaliação média no Google (23 avaliações)" },
                             { id: "2", value: "18h", description: "Abertura diária para seu jantar especial" },
-                            { id: "3", value: "Local & Delivery", description: "Peça pelo Delivery para conforto total ou visite nossa loja para a experiência completa da casa." }
+                            { id: "3", value: "3", description: "Modalidades: Local, Retirada ou Delivery" }
                         ]}
                         metricsAnimation="slide-up"
                         useInvertedBackground={true}
@@ -96,7 +95,6 @@ export default function VillaBurgerPage() {
                 <div id="testimonials" data-section="testimonials">
                     <TestimonialCardTen
                         title="O que dizem nossos clientes"
-                        description="Clientes satisfeitos com nossa qualidade"
                         textboxLayout="default"
                         useInvertedBackground={true}
                         testimonials={[
@@ -112,9 +110,7 @@ export default function VillaBurgerPage() {
                 <div id="comparison" data-section="comparison">
                     <FeatureCardSixteen
                         title="Diferenciais Villa Burger"
-                        description="Por que escolher o nosso hambúrguer artesanal?"
                         textboxLayout="default"
-                        useInvertedBackground={false}
                         animationType="blur-reveal"
                         negativeCard={{ items: ["Fast food industrial", "Ambiente impessoal", "Sabor padronizado", "Sem cuidado artesanal"] }}
                         positiveCard={{ items: ["Hamburgueria artesanal", "Ambiente aconchegante", "Sabor único e autêntico", "Feito com paixão"] }}
@@ -123,7 +119,7 @@ export default function VillaBurgerPage() {
 
                 <div id="contact" data-section="contact">
                     <ContactText
-                        text="Estamos na Rua Rio Guaiba, 194 - Jardim Interlagos, Hortolândia - SP. Venha nos visitar ou peça o seu!"
+                        text="Estamos na Rua Rio Guaiba, 194 - Jardim Interlagos, Hortolândia - SP. Oferecemos Atendimento no Local e Delivery - venha nos visitar ou peça o seu!"
                         background={{ variant: "sparkles-gradient" }}
                         buttons={[
                             { text: "Ver no Google Maps", href: "https://maps.google.com/?q=Rio+Guaiba,+194+-+Jardim+Interlagos,+Hortolândia" },
