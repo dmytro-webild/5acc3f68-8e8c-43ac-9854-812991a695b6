@@ -85,7 +85,7 @@ export default function VillaBurgerPage() {
                         metrics={[
                             { id: "1", value: "5.0", description: "Avaliação média no Google (23 avaliações)" },
                             { id: "2", value: "18h", description: "Abertura diária para seu jantar especial" },
-                            { id: "3", value: "3", description: "Modalidades: Local, Retirada ou Delivery" }
+                            { id: "3", value: "Local & Delivery", description: "Peça pelo Delivery para conforto total ou visite nossa loja para a experiência completa da casa." }
                         ]}
                         metricsAnimation="slide-up"
                         useInvertedBackground={true}
