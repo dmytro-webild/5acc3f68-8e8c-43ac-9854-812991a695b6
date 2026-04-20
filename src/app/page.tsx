@@ -123,7 +123,7 @@ export default function VillaBurgerPage() {
 
                 <div id="contact" data-section="contact">
                     <ContactText
-                        text="Estamos na Rua Rio Guaiba, 194 - Jardim Interlagos, Hortolândia - SP. Oferecemos Atendimento no Local e Delivery - venha nos visitar ou peça o seu!"
+                        text="Estamos na Rua Rio Guaiba, 194 - Jardim Interlagos, Hortolândia - SP. Oferecemos Atendimento no Local e Delivery - escolha a forma que preferir e faça seu pedido agora!"
                         background={{ variant: "sparkles-gradient" }}
                         buttons={[
                             { text: "Ver no Google Maps", href: "https://maps.google.com/?q=Rio+Guaiba,+194+-+Jardim+Interlagos,+Hortolândia" },
